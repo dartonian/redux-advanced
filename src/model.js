@@ -5,18 +5,18 @@ const EAction = {
    FORM_AUTH_AUTOFILL        : "FORM_AUTH_AUTOFILL"
 };
 
+let instance = null;
 export default class AppModel {
 
    constructor(){
+      if(!instance){
+         instance = this;
+      }
 
+      return instance;
    }
 
    static cookies = {};
-
-   request = () => {
-      console.log('request');
-      return new Promise(function(resolve, reject){});
-   }
 
    reducer(state = {
       login : '',
@@ -82,6 +82,11 @@ export default class AppModel {
             });
          }  
       } 
+   }
+
+   request = () => {
+      console.log('request');
+      return new Promise(function(resolve, reject){});
    }
 
    submit =()=> {

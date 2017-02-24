@@ -6,8 +6,6 @@ import AppModel from './model';
 
 let m = new AppModel();
 
-console.log(m.loginUpdate);
-
 export const AppCtrl = connect(
     state => ({
         login : state.login,
