@@ -1,4 +1,3 @@
-//Model. Enum of Actions
 const EAction = {
    FORM_AUTH_LOGIN_UPDATE    : "FORM_AUTH_LOGIN_UPDATE",
    FORM_AUTH_PASSWORD_UPDATE : "FORM_AUTH_PASSWORD_UPDATE",
@@ -6,91 +5,97 @@ const EAction = {
    FORM_AUTH_AUTOFILL        : "FORM_AUTH_AUTOFILL"
 };
 
-//Model. Cookies
-let cookies = {};
+export default class AppModel {
 
-//Model. Reducer
-export function reducer(state = {
-    login : "",
-    password : ""
-}, action) {
-   switch(action.type) {
-      case EAction.FORM_AUTH_LOGIN_UPDATE:
-         return {
-            ...state,
-            login : action.login
-         };
-      case EAction.FORM_AUTH_PASSWORD_UPDATE:
-         return {
-            ...state,
-            password : action.password
-         };
-      case EAction.FORM_AUTH_RESET:
-         return {
-            ...state,
-            login : "",
-            password : ""
-         };
-      case EAction.FORM_AUTH_AUTOFILL:
-         return {
-            ...state,
-            login : action.login,
-            password : action.password
-         };
-      default:
-         return state;
+   constructor(){
+
    }
-}
 
-//Model. ActionCreators
-export function loginUpdate(event) {
-   return {
-      type : EAction.FORM_AUTH_LOGIN_UPDATE,
-      login : event.target.value
-   };
-}
+   static cookies = {};
 
-export function passwordUpdate(event) {
-   return {
-      type : EAction.FORM_AUTH_PASSWORD_UPDATE,
-      password : event.target.value
-   };
-}
+   request = () => {
+      console.log('request');
+      return new Promise(function(resolve, reject){});
+   }
 
-export function reset() {
-   return {
-      type : EAction.FORM_AUTH_RESET
-   };
-}
+   reducer(state = {
+      login : '',
+      password : ''
+   }, action) {
 
-export function tryAutoFill() {
-   return function(dispatch) {
-      if(cookies && (cookies.login !== undefined) && (cookies.password !== undefined)) {
-         dispatch({
-            type : EAction.FORM_AUTH_AUTOFILL,
-            login : cookies.login,
-            password : cookies.password
+      switch(action.type) {
+         case EAction.FORM_AUTH_LOGIN_UPDATE:
+            return {
+               ...state,
+               login : action.login
+            };
+         case EAction.FORM_AUTH_PASSWORD_UPDATE:
+            return {
+               ...state,
+               password : action.password
+            };
+         case EAction.FORM_AUTH_RESET:
+            return {
+               ...state,
+               login : "",
+               password : ""
+            };
+         case EAction.FORM_AUTH_AUTOFILL:
+            return {
+               ...state,
+               login : action.login,
+               password : action.password
+            };
+         default:
+            return state;
+      }
+   }
+
+
+   loginUpdate(event) {
+      return {
+         type : EAction.FORM_AUTH_LOGIN_UPDATE,
+         login : event.target.value
+      };
+   }
+
+   passwordUpdate(event) {
+      return {
+         type : EAction.FORM_AUTH_PASSWORD_UPDATE,
+         password : event.target.value
+      };
+   }
+
+   reset() {
+      return {
+         type : EAction.FORM_AUTH_RESET
+      };
+   }
+
+   tryAutoFill() {
+      return (dispatch) => {
+         if(AppModel.cookies && (AppModel.cookies.login !== undefined) && (AppModel.cookies.password !== undefined)) {
+            dispatch({
+               type : EAction.FORM_AUTH_AUTOFILL,
+               login : AppModel.cookies.login,
+               password : AppModel.cookies.password
+            });
+         }  
+      } 
+   }
+
+   submit =()=> {
+      return (dispatch, getState) => {
+         const state = getState();
+         dispatch(this.reset());  
+         this.request('/auth/', {send: {
+             login : state.login,
+             password : state.password
+         }}).then(()=> {
+             router.push('/');
+         }).catch(()=> {
+             window.alert("Auth failed")
          });
-      }  
-   } 
-}
-
-const request = function() {
-   console.log('request');
-   return new Promise(function(resolve, reject){});
-}
-
-export function submit() {
-   return function(dispatch, getState) {
-      const state = getState();
-      dispatch(reset());  
-      request('/auth/', {send: {
-          login : state.login,
-          password : state.password
-      }}).then(function() {
-          router.push('/');
-      }).catch(function() {
-          window.alert("Auth failed")
-      });
+      }
    }
 }

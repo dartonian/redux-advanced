@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-//var connect = ReactRedux.connect;
-//var bindActionCreators = Redux.bindActionCreators;
 import App from './app';
-import {loginUpdate,passwordUpdate,reset,tryAutoFill,submit} from './model';
+import AppModel from './model';
+
+let m = new AppModel();
+
+console.log(m.loginUpdate);
 
 export const AppCtrl = connect(
     state => ({
@@ -12,10 +14,10 @@ export const AppCtrl = connect(
         password : state.password
     }),
     dispatch => bindActionCreators({
-        loginUpdate,
-        passwordUpdate,
-        reset,
-        tryAutoFill,
-        submit
+        loginUpdate: m.loginUpdate,
+        passwordUpdate: m.passwordUpdate,
+        reset: m.reset,
+        tryAutoFill: m.tryAutoFill,
+        submit: m.submit
     }, dispatch)
 )(App);
