@@ -14,7 +14,7 @@ function contactsReducer (state = enums.initialState, action) {
                 message : action.message
             };
         case enums.RESET:
-            return Object.assign(state,initialState);
+            return Object.assign(state,enums.initialState);
 
         default:
             return state;
