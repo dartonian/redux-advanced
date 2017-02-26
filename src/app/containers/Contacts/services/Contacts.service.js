@@ -45,8 +45,8 @@ class ContactsService {
             dispatch(this.reset());
 
             this._request('/auth/', {send: {
-                name : state.name,
-                message : state.message
+                name : state.contactsReducer.name,
+                message : state.contactsReducer.message
             }}).then(()=> {
                 console.log('submit success');
             }).catch(()=> {

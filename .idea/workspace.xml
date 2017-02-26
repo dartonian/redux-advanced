@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9ab6ed-c8ea-4296-a512-4527702b233a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/containers/About/About.js" afterPath="$PROJECT_DIR$/src/app/containers/About/About.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/containers/Contacts/Contacts.js" afterPath="$PROJECT_DIR$/src/app/containers/Contacts/Contacts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js" afterPath="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducer.js" afterPath="$PROJECT_DIR$/src/reducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.enums.js" afterPath="$PROJECT_DIR$/src/app/containers/Contacts/Contacts.enums.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.reducer.js" afterPath="$PROJECT_DIR$/src/app/containers/Contacts/Contacts.reducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,6 +22,32 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Contacts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/Contacts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <marker date="1488139716615" expanded="true" signature="296:677" ph="..." />
+                <marker date="1488139716615" expanded="true" signature="336:667" ph="..." />
+                <marker date="1488139716615" expanded="true" signature="438:655" ph="..." />
+                <marker date="1488139716615" expanded="true" signature="465:522" ph="..." />
+                <marker date="1488139716615" expanded="true" signature="549:612" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contacts.service.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Contacts.reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/Contacts.reducer.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,8 +61,8 @@
       <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="85">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -47,18 +70,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contacts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/Contacts.js">
+      <file leaf-file-name="About.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/About/About.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <marker date="1488139485527" expanded="true" signature="329:710" ph="..." />
-                <marker date="1488139485527" expanded="true" signature="369:700" ph="..." />
-                <marker date="1488139485527" expanded="true" signature="471:688" ph="..." />
-                <marker date="1488139485527" expanded="true" signature="498:555" ph="..." />
-                <marker date="1488139485527" expanded="true" signature="582:645" ph="..." />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/containers/About/About.js" />
         <option value="$PROJECT_DIR$/src/app/shared/index.js" />
         <option value="$PROJECT_DIR$/src/app/shared/components/index.js" />
         <option value="$PROJECT_DIR$/src/app/shared/components/Footer.js" />
@@ -101,9 +117,10 @@
         <option value="$PROJECT_DIR$/src/app/containers/Contacts/services/reducer.js" />
         <option value="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.enums.js" />
         <option value="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.reducer.js" />
-        <option value="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js" />
         <option value="$PROJECT_DIR$/src/reducer.js" />
         <option value="$PROJECT_DIR$/src/app/containers/Contacts/Contacts.js" />
+        <option value="$PROJECT_DIR$/src/app/containers/About/About.js" />
+        <option value="$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js" />
       </list>
     </option>
   </component>
@@ -232,6 +249,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux-advanced" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux-advanced" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Contacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux-advanced" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux-advanced" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="About" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -316,12 +389,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488128979269</updated>
-      <workItem from="1488128980475" duration="10473000" />
+      <workItem from="1488128980475" duration="11375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10473000" />
+    <option name="totallyTimeSpent" value="11375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -357,14 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/containers/About/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -504,10 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js">
+    <entry file="file://$PROJECT_DIR$/src/app/containers/About/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -522,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -532,15 +597,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/Contacts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="15" selection-end-column="23" />
           <folding>
-            <marker date="1488139485527" expanded="true" signature="329:710" ph="..." />
-            <marker date="1488139485527" expanded="true" signature="369:700" ph="..." />
-            <marker date="1488139485527" expanded="true" signature="471:688" ph="..." />
-            <marker date="1488139485527" expanded="true" signature="498:555" ph="..." />
-            <marker date="1488139485527" expanded="true" signature="582:645" ph="..." />
+            <marker date="1488139716615" expanded="true" signature="296:677" ph="..." />
+            <marker date="1488139716615" expanded="true" signature="336:667" ph="..." />
+            <marker date="1488139716615" expanded="true" signature="438:655" ph="..." />
+            <marker date="1488139716615" expanded="true" signature="465:522" ph="..." />
+            <marker date="1488139716615" expanded="true" signature="549:612" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Contacts/services/Contacts.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
