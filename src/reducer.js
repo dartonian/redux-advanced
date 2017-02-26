@@ -1,18 +1,10 @@
 import { combineReducers } from 'redux';
 import {routerReducer} from 'react-router-redux';
-
-function postsBySubreddit(state = {}, action) {
-  switch (action.type) {
-    case 'TEST':
-      return Object.assign({}, state, {})
-    default:
-      return state
-  }
-}
+import contactsService from './app/containers/Contacts/services/Contacts.service';
 
 const rootReducer = combineReducers({
-  postsBySubreddit,
+  contactsReducer: contactsService.reducer,
   routing: routerReducer
-})
+});
 
-export default rootReducer
+export default rootReducer;

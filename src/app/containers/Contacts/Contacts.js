@@ -6,11 +6,34 @@ export default class Contacts extends Component {
 	};
 
 	render() {
-		console.log(this.props);
-    
-		return (
-			<div>
-				<h1>Hello world contacts!</h1>	
+
+		const {
+			name,
+			message,
+			nameUpdate,
+			messageUpdate,
+			requestSend
+		} = this.props;
+
+        return (
+			<div className="section contacts">
+				<div className="section__contents">
+					<h1 className="text text_title-h2 text_center">Контакты</h1>
+
+					<form onSubmit={requestSend}>
+
+						<input type="text"
+							   value={name}
+							   onChange={nameUpdate} />
+
+						<input type="text"
+							   value={message}
+							   onChange={messageUpdate} />
+
+						<input type="submit"/>
+					</form>
+
+				</div>
 			</div>
 		);
 	}

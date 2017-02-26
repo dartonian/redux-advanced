@@ -4,6 +4,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import rimraf from 'rimraf';
 import autoprefixer from 'autoprefixer';
+import historyApiFallback from 'connect-history-api-fallback';
 
 const loaders = [
     {
@@ -101,6 +102,8 @@ export default {
 
     devServer: {
         contentBase: path.join(__dirname, '/src'),
-        hot: true
+        hot: true,
+        port: 3000,
+        historyApiFallback: true
     }
 };

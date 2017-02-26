@@ -37,6 +37,7 @@
     "babel-preset-stage-0": "6.5.0",
     "babel-preset-stage-1": "6.5.0",
     "babel-register": "6.11.5",
+    "connect-history-api-fallback": "1.2.0",
     "css-loader": "^0.21.0",
     "extract-text-webpack-plugin": "2.0.0-rc.3",
     "file-loader": "^0.8.4",

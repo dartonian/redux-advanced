@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import { Link } from 'react-router';
+import {Footer,Header} from '../../shared/components';
 
 export default class App extends Component {
 	static propTypes = {
@@ -7,13 +7,15 @@ export default class App extends Component {
 	};
 
 	render() {
-		console.log(this.props);
     
 		return (
 			<div>
-				<Link to="/contacts/" className="link">link</Link>
-				<h1>Hello world app!</h1>
+
+				<Header />
+
 				{this.props.children}
+
+				<Footer />
 			</div>
 		);
 	}

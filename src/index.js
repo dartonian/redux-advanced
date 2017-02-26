@@ -20,6 +20,7 @@ import Style from './less/styles.less';
 /*--------------------------------*/
 
 const store = configureStore();
+
 const history = createHistory(store);
 
 /*--------------------------------*/
