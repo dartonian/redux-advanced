@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import {routerReducer} from 'react-router-redux';
-import contactsService from './app/containers/Contacts/services/Contacts.service';
+import contactsReducer from './app/containers/Contacts/Contacts.reducer';
 
 const rootReducer = combineReducers({
-  contactsReducer: contactsService.reducer,
+  contactsReducer,
   routing: routerReducer
 });
 

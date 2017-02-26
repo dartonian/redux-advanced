@@ -1,6 +1,4 @@
-import enums from './Contacts.enums';
-import contactsReducer from './Contacts.reducer';
-
+import enums from '../Contacts.enums';
 let instance = null;
 
 class ContactsService {
@@ -17,8 +15,6 @@ class ContactsService {
         console.log('request');
         return new Promise(function(resolve, reject){});
     };
-
-    reducer = contactsReducer;
 
 
     nameUpdate(e) {

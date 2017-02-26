@@ -15,6 +15,8 @@ export default class Contacts extends Component {
 			requestSend
 		} = this.props;
 
+		console.log(`name: ${name}`);
+
         return (
 			<div className="section contacts">
 				<div className="section__contents">

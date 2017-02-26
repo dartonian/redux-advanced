@@ -1,11 +1,6 @@
 import enums from './Contacts.enums';
 
-const initialState = {
-    name : '',
-    message : ''
-};
-
-function contactsReducer (state = initialState, action) {
+function contactsReducer (state = enums.initialState, action) {
 
     switch(action.type) {
         case enums.NAME_UPDATE:
