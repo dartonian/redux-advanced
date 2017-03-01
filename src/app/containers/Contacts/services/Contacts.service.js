@@ -37,6 +37,29 @@ class ContactsService {
         };
     }
 
+    requestPosts() {
+        return {
+            type: enums.REQUEST_POSTS
+        };
+    }
+
+    receivePosts(json) {
+        return {
+            type: enums.LOAD_POSTS,
+            posts: json.data.children.map(child => child.data),
+        };
+    }
+
+
+    fetchPosts =()=> {
+      return dispatch => {
+        dispatch(this.requestPosts())
+        return fetch(`http://www.reddit.com/r/frontend.json`)
+          .then(res => res.json())
+          .then(json => dispatch(this.receivePosts(json)))
+      }
+    }
+
     requestSend =(e)=> {
         e.preventDefault();
         return (dispatch, getState) => {

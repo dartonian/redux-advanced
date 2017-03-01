@@ -8,12 +8,15 @@ import contactsService from './services/Contacts.service';
 const ContactsCtrl = connect(
     state => ({
         name : state.contactsReducer.name,
-        message : state.contactsReducer.message
+        message : state.contactsReducer.message,
+        waiting: state.contactsReducer.waiting,
+        posts: state.contactsReducer.posts
     }),
     dispatch => bindActionCreators({
         nameUpdate: contactsService.nameUpdate,
         messageUpdate: contactsService.messageUpdate,
-        requestSend: contactsService.requestSend
+        requestSend: contactsService.requestSend,
+        getPosts: contactsService.fetchPosts
     }, dispatch)
 )(Contacts);
 

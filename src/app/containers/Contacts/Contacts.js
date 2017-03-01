@@ -12,8 +12,13 @@ export default class Contacts extends Component {
 			message,
 			nameUpdate,
 			messageUpdate,
-			requestSend
+			requestSend,
+			waiting,
+			posts,
+			getPosts
 		} = this.props;
+
+		console.log(posts);
 
         return (
 			<div className="section contacts">
@@ -32,6 +37,19 @@ export default class Contacts extends Component {
 
 						<input type="submit"/>
 					</form>
+					{
+						posts && (
+							<ul>
+								{posts.map((post, i) =>
+									<li key={i}>{post.title}</li>
+						    	)}
+							</ul>
+						)
+					}
+					<br />
+					<div>
+						<button onClick={getPosts}>Загрузить</button>
+					</div>
 
 				</div>
 			</div>

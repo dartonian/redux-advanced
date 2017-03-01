@@ -16,6 +16,17 @@ function contactsReducer (state = enums.initialState, action) {
         case enums.RESET:
             return Object.assign(state,enums.initialState);
 
+        case enums.REQUEST_POSTS:
+            return Object.assign({},state, {
+                waiting: true
+            });
+
+        case enums.LOAD_POSTS:
+            return Object.assign({},state, {
+                waiting: false,
+                posts: action.posts
+            });
+
         default:
             return state;
     }
