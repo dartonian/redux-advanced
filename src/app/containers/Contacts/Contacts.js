@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import Slider from 'material-ui/Slider';
 
 export default class Contacts extends Component {
 	static propTypes = {
@@ -17,8 +18,6 @@ export default class Contacts extends Component {
 			posts,
 			getPosts
 		} = this.props;
-
-		console.log(posts);
 
         return (
 			<div className="section contacts">
@@ -50,7 +49,11 @@ export default class Contacts extends Component {
 					<div>
 						<button onClick={getPosts}>Загрузить</button>
 					</div>
-
+					<div>
+						<Slider />
+						<Slider defaultValue={0.5} />
+						<Slider defaultValue={1} />
+					</div>
 				</div>
 			</div>
 		);
